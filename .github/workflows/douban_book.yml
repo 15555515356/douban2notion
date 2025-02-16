@@ -3,7 +3,9 @@ name: douban book sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * *"
+    - cron: "0 6 * * *"
+    - cron: "0 12 * * *"
+    - cron: "0 18 * * *"
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
